@@ -9,10 +9,10 @@ while True:
     if user_action == "quit":
         print("Thanks for playing!")
         break
+
     ai_action = random.choice(["rock", "paper", "scissors"])
-    
     print(f"\nYou chose {user_action}, AI chose {ai_action}.\n")
-    
+
     if user_action == ai_action:
         print(f"Both players selected {user_action}. It's a tie!")
     elif user_action == "rock":
@@ -30,3 +30,6 @@ while True:
             print("Scissors cuts paper! You win!")
         else:
             print("Rock smashes scissors! You lose.")
+    else:
+        print("Invalid input, please choose rock, paper, or scissors.")
+
